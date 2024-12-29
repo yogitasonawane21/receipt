@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+</head>
+<style>
+    body{
+        background-color: #eeeee4;
+    }
+    .receipt-container{
+        width: 80%;
+        border: 2px solid pink;
+        margin: 0 auto;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0,0.2);   
+    }
+    .receipt-container{
+        border-bottom: 1px dashed pink;
+    }
+    .brand-logo{
+        width: 180px;
+        display: block;
+        margin: 0 auto;
+    }
+    .brand-title{
+       text-align: center;  
+    }
+    .brand-address{
+        text-align: right;
+    }
+    .receipt-title{
+        text-align: center;
+        font-size: 30px;
+        margin: 40px 0;
+    }
+    .receipt-body{
+        position: relative;   
+    }
+    .receipt-detail{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .receipt-detail-key{
+        color: grey;
+        width: 30%;
+    }
+    .receipt-detail-value{
+       font-weight: bold;
+       border-bottom: 1px dashed grey;
+       width: 30%;
+    }
+    .Accountant-signature{
+        text-align:right;
+        margin-top: 200px;
+        bottom: -30px;
+        padding-bottom: 30px;
+        border-bottom: 1px dashed grey;
+        }
+    .stamp{
+        width:150px;
+       position: absolute;
+      right: 150px;
+      transform: rotate(-20deg);
+      margin-right:150px;
+       }
+       .receipt-footer{
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        background-color: rgb(223, 152, 152);
+       }
+</style>
+<body>
+    <div class="receipt-container">
+        <div class="receipt-header">
+    <img src="nykaa.jpg" class="brand-logo"/>
+    <h2 class="brand-title">Nykaa </h2>
+    <p class="brand-address">
+        NO G1 & 141, Sunder Mahal,<br> NS Marg,Churchgate<br> Marine Drive <br>Mumbai - 400020
+        <hr>  
+    </p>   
+        </div>
+<div class="receipt-body">
+    <h3 class="receipt-title">Payment Receipt </h3>
+    <div class="receipt-detail">
+        <div class="receipt-detail-key">Quality:</div>
+        <div class="receipt-detail-value">01</div>
+            </div>
+</div>
+<div class="receipt-detail">
+    <div class="receipt-detail-key">BILL TO:</div>
+    <div class="receipt-detail-value">Tanuja N Sonawane</div>
+</div>
+<div class="receipt-detail">
+    <div class="receipt-detail-key">Address:</div>
+    <div class="receipt-detail-value">Sanjivani nagar sinnar, Nashik Maharashtra, 422103</div>
+</div>
+<div class="receipt-detail">
+    <div class="receipt-detail-key">Description:</div>
+    <div class="receipt-detail-value">Dress</div>
+</div>
+    <div class="receipt-detail">
+        <div class="receipt-detail-key">Payment Date:</div>
+        <div class="receipt-detail-value">29 dec 2024</div>
+</div>
+<div class="receipt-detail">
+    <div class="receipt-detail-key">Amount:</div>
+    <div class="receipt-detail-value">5000/-</div>
+   </div>
+   <div class="receipt-detail">
+    <div class="receipt-detail-key">Payment Mode:</div>
+    <div class="receipt-detail-value">UPI</div>       
+</div>
+<div class="receipt-detail">
+<div class="receipt-detail-key">Delivered On:</div>
+<div class="receipt-detail-value">sun, 14 jan</div> 
+        </div> 
+        <img src="stamp.jpg" class="stamp"/>
+       <p class="Accountant-signature">Accountant signature</p>                
+       <p>
+        This is computer generated receipt and does not require any signature.
+    </p>    
+<div class="receipt-footer">
+    thanku you for your payment.
+</div>
+</div>   
+</div>
+</body>
+</html>
